@@ -62,6 +62,7 @@ dependencies {
 
     implementation(libs.retrofit)
     implementation(libs.converter.moshi)
+    implementation(libs.navigation.compose)
 
 
     testImplementation(libs.junit)
