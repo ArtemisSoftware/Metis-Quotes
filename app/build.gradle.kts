@@ -66,6 +66,7 @@ dependencies {
     implementation(libs.converter.moshi)
     implementation(libs.navigation.compose)
     implementation(libs.material.icons.extended)
+    implementation(libs.okhttp3)
 
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
