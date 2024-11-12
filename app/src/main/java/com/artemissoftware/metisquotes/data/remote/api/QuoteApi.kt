@@ -13,6 +13,6 @@ interface QuoteApi {
     suspend fun getDailyQuotes(): DailyQuotesDto
 
     companion object {
-        const val BASE_URL = "https://api.quotable.io/"
+        const val BASE_URL = "http://api.quotable.io/"
     }
 }
