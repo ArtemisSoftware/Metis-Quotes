@@ -8,8 +8,9 @@ import com.artemissoftware.metisquotes.domain.Resource
 import com.artemissoftware.metisquotes.domain.models.DailyQuotes
 import com.artemissoftware.metisquotes.domain.models.Quote
 import com.artemissoftware.metisquotes.domain.repository.QuoteRepository
+import javax.inject.Inject
 
-class QuoteRepositoryImpl /*@Inject*/ constructor(
+class QuoteRepositoryImpl @Inject constructor(
     private val quoteApiSource: QuoteApiSource
 ): QuoteRepository {
 
