@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MetisQuotes</string>
+    <string name="daily_quotes">Daily Quotes</string>
+    <string name="random_quote">Random Quote</string>
 </resources>

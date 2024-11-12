@@ -63,6 +63,7 @@ dependencies {
     implementation(libs.retrofit)
     implementation(libs.converter.moshi)
     implementation(libs.navigation.compose)
+    implementation(libs.material.icons.extended)
 
 
     testImplementation(libs.junit)

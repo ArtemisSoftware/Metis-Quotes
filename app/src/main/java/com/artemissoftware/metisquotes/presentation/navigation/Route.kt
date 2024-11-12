@@ -1,6 +1,9 @@
 package com.artemissoftware.metisquotes.presentation.navigation
 
-sealed class Route(val route: String) {
-    data object DailyQuotes : Route("daily_quotes")
-    data object RandomQuote : Route("random_quote")
+import androidx.annotation.StringRes
+import com.artemissoftware.metisquotes.R
+
+sealed class Route(val route: String, @StringRes val description: Int) {
+    data object DailyQuotes : Route(route = "daily_quotes", description = R.string.daily_quotes)
+    data object RandomQuote : Route(route ="random_quote", description = R.string.random_quote)
 }
