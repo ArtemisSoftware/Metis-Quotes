@@ -2,7 +2,7 @@ package com.artemissoftware.metisquotes.data.remote.dto
 
 import com.squareup.moshi.Json
 
-data class DailyQuotesDto(
+data class QuotesDto(
     @field:Json(name = "count")
     val count: Int= 0,
     @field:Json(name = "lastItemIndex")

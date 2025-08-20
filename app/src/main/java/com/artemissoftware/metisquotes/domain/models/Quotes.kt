@@ -1,5 +1,5 @@
 package com.artemissoftware.metisquotes.domain.models
 
-data class DailyQuotes(
+data class Quotes(
     val quotes: List<Quote>
 )

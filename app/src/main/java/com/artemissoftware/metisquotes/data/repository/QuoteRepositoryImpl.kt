@@ -5,7 +5,7 @@ import com.artemissoftware.metisquotes.data.mappers.toQuote
 import com.artemissoftware.metisquotes.data.remote.HandleNetwork
 import com.artemissoftware.metisquotes.data.remote.source.QuoteApiSource
 import com.artemissoftware.metisquotes.domain.Resource
-import com.artemissoftware.metisquotes.domain.models.DailyQuotes
+import com.artemissoftware.metisquotes.domain.models.Quotes
 import com.artemissoftware.metisquotes.domain.models.Quote
 import com.artemissoftware.metisquotes.domain.repository.QuoteRepository
 import javax.inject.Inject
@@ -20,7 +20,7 @@ class QuoteRepositoryImpl @Inject constructor(
         }
     }
 
-    override suspend fun getDailyQuotes(): Resource<DailyQuotes> {
+    override suspend fun getDailyQuotes(): Resource<Quotes> {
         return HandleNetwork.safeNetworkCall {
             quoteApiSource.getDailyQuotes().toDailyQuotes()
         }
