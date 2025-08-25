@@ -12,6 +12,6 @@ internal fun QuoteDto.toQuote(): Quote {
     )
 }
 
-internal fun QuotesDto.toDailyQuotes(): Quotes {
-    return Quotes(quotes = this.quotes.map { it.toQuote() })
+internal fun QuotesDto.toQuotes(): Quotes {
+    return Quotes(quotes = this.results.map { it.toQuote() })
 }

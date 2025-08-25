@@ -16,4 +16,8 @@ class QuoteApiSource @Inject constructor(
     suspend fun getDailyQuotes(): QuotesDto {
         return HandleApi.safeApiCall { quoteApi.getDailyQuotes() }
     }
+
+    suspend fun getQuotes(page: Int, limit: Int): QuotesDto {
+        return HandleApi.safeApiCall { quoteApi.getQuotes(page = page, limit = limit) }
+    }
 }

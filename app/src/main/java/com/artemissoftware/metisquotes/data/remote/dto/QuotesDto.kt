@@ -10,7 +10,7 @@ data class QuotesDto(
     @field:Json(name = "page")
     val page: Int= 0,
     @field:Json(name = "results")
-    val quotes: List<QuoteDto>,
+    val results: List<QuoteDto>,
     @field:Json(name = "totalCount")
     val totalCount: Int= 0,
     @field:Json(name = "totalPages")
