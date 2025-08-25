@@ -59,8 +59,15 @@ fun MQBottomNavigationBar(
                 } == true,
                 onClick = {
                     navController.navigate(item.route) {
-                        popUpTo(navController.graph.findStartDestination().id)
+                        //popUpTo(navController.graph.findStartDestination().id)
+                        //launchSingleTop = true
+
                         launchSingleTop = true
+                        restoreState = true
+                        popUpTo(navController.graph.findStartDestination().id) {
+                            saveState = true
+                        }
+
                     }
                 }
             )
