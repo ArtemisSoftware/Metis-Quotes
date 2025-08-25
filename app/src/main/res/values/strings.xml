@@ -2,6 +2,7 @@
     <string name="app_name">MetisQuotes</string>
     <string name="daily_quotes">Daily Quotes</string>
     <string name="random_quote">Random Quote</string>
+    <string name="all_quotes">All Quotes</string>
     <string name="connection_error">Connection error</string>
     <string name="connection_socket_time_out">Socket timeout</string>
     <string name="unknown_error">An error occurred</string>

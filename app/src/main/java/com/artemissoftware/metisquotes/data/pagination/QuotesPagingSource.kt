@@ -1,5 +1,6 @@
 package com.artemissoftware.metisquotes.data.pagination
 
+import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.artemissoftware.metisquotes.data.remote.HandleNetwork
@@ -37,6 +38,8 @@ class QuotesPagingSource(
                 val quotes = quoteApiSource.getQuotes(page = startKey, limit = params.loadSize)
                 val prevKey = if (startKey == STARTING_KEY) null else startKey - 1
                 val nextKey = if (quotes.results.isEmpty()) null else (quotes.page + 1)
+
+                Log.d("QuotesPagingSource", "startKey: ${startKey}  prevKey: ${prevKey}  nextKey: ${nextKey}  ")
 
                 LoadResult.Page(data = quotes.results, prevKey = prevKey, nextKey = nextKey)
 //                val pokemonList = result.data

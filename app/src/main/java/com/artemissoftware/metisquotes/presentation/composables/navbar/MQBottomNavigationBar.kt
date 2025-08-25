@@ -1,6 +1,7 @@
 package com.artemissoftware.metisquotes.presentation.composables.navbar
 
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.BubbleChart
 import androidx.compose.material.icons.filled.FormatQuote
 import androidx.compose.material.icons.filled.Home
 import androidx.compose.material3.Icon
@@ -22,7 +23,7 @@ fun MQBottomNavigationBar(
     navController: NavHostController,
 ) {
     val items = listOf(
-        Route.DailyQuotes, Route.RandomQuote
+        Route.DailyQuotes, Route.RandomQuote, Route.AllQuotes
     )
 
     val navBackStackEntry by navController.currentBackStackEntryAsState()
@@ -41,6 +42,12 @@ fun MQBottomNavigationBar(
 
                         Route.RandomQuote -> Icon(
                             Icons.Default.FormatQuote,
+                            contentDescription = null,
+                            tint = Color.White
+                        )
+
+                        Route.AllQuotes -> Icon(
+                            Icons.Default.BubbleChart,
                             contentDescription = null,
                             tint = Color.White
                         )
