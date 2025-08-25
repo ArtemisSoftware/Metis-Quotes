@@ -18,6 +18,7 @@ com-google-devtools-ksp = "1.9.0-1.0.13"
 okhttp3 = "4.10.0"
 kotlinPlugin = "1.8.10"
 coil-compose = "2.5.0"
+paging = "3.2.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -57,6 +58,12 @@ hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-com
 # Coil
 
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil-compose" }
+
+
+# Paging3
+
+paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "paging" }
+paging-runtime-ktx = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
